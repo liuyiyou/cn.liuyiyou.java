@@ -1,0 +1,237 @@
+{
+    "unified": true,
+    "linkparts": {
+        "tapholeFace": [
+            "top",
+            "bottom",
+            "left",
+            "right",
+            "back",
+            "back"
+        ],
+        "default": [
+            {
+                "linkpartId": "1",
+                "linkpartName": "三合一1",
+                "ruleId": "1",
+                "ruleName": "三合一方案1"
+            },
+            {
+                "linkpartId": "",
+                "linkpartName": "",
+                "ruleId": "",
+                "ruleName": ""
+            }
+        ],
+        "left": [
+            {},
+            {}
+        ],
+        "right": [
+            {},
+            {}
+        ],
+        "top": [
+            {},
+            {}
+        ],
+        "bottom": [
+            {},
+            {}
+        ],
+        "front": [
+            {},
+            {}
+        ],
+        "back": [
+            {},
+            {}
+        ]
+    },
+    "drillData": {
+        "cncCode2": "B",
+        "cncCode1": "",
+        "bottom": [
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 70,
+                "wide": 18.2,
+                "faceSide": "0",
+                "y": 0,
+                "x": 35,
+                "z": 29,
+                "x0": 35,
+                "y0": 29
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 70,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "x": 35,
+                "z": 541,
+                "x0": 35,
+                "y0": 541
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 70,
+                "x": 79,
+                "x0": 79,
+                "y0": 70
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 480,
+                "x": 79,
+                "x0": 79,
+                "y0": 480
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 531,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 89,
+                "x": 319.1,
+                "x0": 319.1,
+                "y0": 89
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 531,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 480,
+                "x": 319.1,
+                "x0": 319.1,
+                "y0": 480
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 70,
+                "x": 559.1,
+                "x0": 559.1,
+                "y0": 70
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 480,
+                "x": 559.1,
+                "x0": 559.1,
+                "y0": 480
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 70,
+                "x": 2391,
+                "x0": 2391,
+                "y0": 70
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 480,
+                "x": 2391,
+                "x0": 2391,
+                "y0": 480
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 70,
+                "x": 1850.1,
+                "x0": 1850.1,
+                "y0": 70
+            },
+            {
+                "name": "三合一方案一",
+                "type": "胶粒孔",
+                "diam": 10,
+                "depth": 13,
+                "spacing": "0",
+                "width": 550,
+                "wide": 18,
+                "faceSide": "0",
+                "y": 0,
+                "z": 480,
+                "x": 1850.1,
+                "x0": 1850.1,
+                "y0": 480
+            }
+        ]
+    }
+}

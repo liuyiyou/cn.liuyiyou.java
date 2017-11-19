@@ -1,0 +1,1312 @@
+{
+                    "id": 229,
+                    "uuid": "53F938C9-0890-4568-A5EC-B193F0ECDB1E",
+                    "type": "Object3D",
+                    "name": "左侧板",
+                    "meta": {
+                        "version": 1,
+                        "unit": "m",
+                        "status": "ok",
+                        "typeLevel": "dxoElement",
+                        "type": "dxoBoard",
+                        "subtype": "left",
+                        "fittype": "fixed",
+                        "recvtype": "dxoBoard,dxoHandle,dxoFunction,dxoDrawerdxoBoard,",
+                        "FaceMaterial": {
+                            "isMultiply": false,
+                            "isInherit": true,
+                            "TextureDir": "vertical",
+                            "Textures": {
+                                "default": {
+                                    "TextureId": 415,
+                                    "TextureName": "栓木",
+                                    "TextureUrl": "textureImg/fh2J1/d2Tg2/0047",
+                                    "Color": "",
+                                    "ColorName": "",
+                                    "ColorCode": "",
+                                    "EffectCode": "Wood01",
+                                    "EffectName": "木材/栓木",
+                                    "EffectType": "Wood"
+                                },
+                                "left": {
+                                    "TextureId": "",
+                                    "TextureName": "",
+                                    "TextureUrl": "",
+                                    "Color": "",
+                                    "ColorName": "",
+                                    "ColorCode": "",
+                                    "EffectCode": "",
+                                    "EffectName": "",
+                                    "EffectType": ""
+                                },
+                                "right": {
+                                    "TextureId": "",
+                                    "TextureName": "",
+                                    "TextureUrl": "",
+                                    "Color": "",
+                                    "ColorName": "",
+                                    "ColorCode": "",
+                                    "EffectCode": "",
+                                    "EffectName": "",
+                                    "EffectType": ""
+                                },
+                                "top": {
+                                    "TextureId": "",
+                                    "TextureName": "",
+                                    "TextureUrl": "",
+                                    "Color": "",
+                                    "ColorName": "",
+                                    "ColorCode": "",
+                                    "EffectCode": "",
+                                    "EffectName": "",
+                                    "EffectType": ""
+                                },
+                                "bottom": {
+                                    "TextureId": "",
+                                    "TextureName": "",
+                                    "TextureUrl": "",
+                                    "Color": "",
+                                    "ColorName": "",
+                                    "ColorCode": "",
+                                    "EffectCode": "",
+                                    "EffectName": "",
+                                    "EffectType": ""
+                                },
+                                "front": {
+                                    "TextureId": "",
+                                    "TextureName": "",
+                                    "TextureUrl": "",
+                                    "Color": "",
+                                    "ColorName": "",
+                                    "ColorCode": "",
+                                    "EffectCode": "",
+                                    "EffectName": "",
+                                    "EffectType": ""
+                                },
+                                "back": {
+                                    "TextureId": "",
+                                    "TextureName": "",
+                                    "TextureUrl": "",
+                                    "Color": "",
+                                    "ColorName": "",
+                                    "ColorCode": "",
+                                    "EffectCode": "",
+                                    "EffectName": "",
+                                    "EffectType": ""
+                                }
+                            }
+                        },
+                        "size": {
+                            "length": 2400,
+                            "width": 550,
+                            "height": 18
+                        },
+                        "kSize": {
+                            "length": 2398,
+                            "width": 548,
+                            "height": 18
+                        },
+                        "relative": {
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "distance": {
+                                "left": 0,
+                                "right": 0,
+                                "top": 0,
+                                "bottom": 0,
+                                "far": 0,
+                                "near": 0
+                            }
+                        },
+                        "helper": {
+                            "box": {},
+                            "arrow": {}
+                        },
+                        "control": {},
+                        "rotation": {
+                            "x": "",
+                            "y": "",
+                            "z": ""
+                        },
+                        "position": {},
+                        "parameters": {},
+                        "lock": false,
+                        "memo": "",
+                        "price": "",
+                        "sale": {
+                            "status": "",
+                            "title": "",
+                            "price": "",
+                            "url": ""
+                        },
+                        "undock": false,
+                        "source": {
+                            "type": "design",
+                            "id": 2423,
+                            "url": "/company/C001/json/2423.json"
+                        },
+                        "define": false,
+                        "produce": {
+                            "prdNumber": "",
+                            "isStandard": 0,
+                            "stdRules": {
+                                "stdLength": "",
+                                "stdWidth": "",
+                                "stdHeight": "",
+                                "noLength": "",
+                                "noWidth": "",
+                                "noHeight": "",
+                                "memo": ""
+                            },
+                            "stdRuleResult": {
+                                "Length": 0,
+                                "Width": 0,
+                                "Height": 0
+                            },
+                            "route": {
+                                "id": "",
+                                "name": ""
+                            },
+                            "isImport": "",
+                            "shape": {
+                                "type": "bsRectangle",
+                                "data": {
+                                    "holeShapes": [],
+                                    "outShape": [
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.4,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.4,
+                                                0.55,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                0,
+                                                0.55,
+                                                0
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "kShape": {
+                                "type": "bsRectangle",
+                                "data": {
+                                    "holeShapes": [],
+                                    "outShape": [
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                0.001,
+                                                0.001,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.399,
+                                                0.001,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.399,
+                                                0.549,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                0.001,
+                                                0.549,
+                                                0
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "k8Shape": {
+                                "type": "bsRectangle",
+                                "data": {
+                                    "holeShapes": [],
+                                    "outShape": [
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                -0.003,
+                                                -0.003,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.403,
+                                                -0.003,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.403,
+                                                0.553,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                -0.003,
+                                                0.553,
+                                                0
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "k10Shape": {
+                                "type": "bsRectangle",
+                                "data": {
+                                    "holeShapes": [],
+                                    "outShape": [
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                -0.004,
+                                                -0.004,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.404,
+                                                -0.004,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                2.404,
+                                                0.554,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "type": "point",
+                                            "position": [
+                                                -0.004,
+                                                0.554,
+                                                0
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "remark": [
+                                "",
+                                "",
+                                ""
+                            ],
+                            "cad": {
+                                "id": "",
+                                "code": "",
+                                "url": ""
+                            },
+                            "element": {},
+                            "pmsGroupId": "",
+                            "pmsElementCode": "",
+                            "board": {
+                                "type": "dxoBoard",
+                                "dir": "vertical",
+                                "worldPosition": {
+                                    "x": -0.044133,
+                                    "y": 0,
+                                    "z": -1.3039
+                                },
+                                "interfaces": [
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 2382,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 2400,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 2400,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 2382,
+                                                "y": 0,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "E1658627-79B9-4272-8098-54169FE06B84"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 70,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 88,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 88,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 70,
+                                                "y": 0,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "DBA8B474-DCEB-4DBB-A4B7-4CC39A027BCD"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 0,
+                                                "y": 0,
+                                                "z": 532
+                                            },
+                                            {
+                                                "x": 70,
+                                                "y": 0,
+                                                "z": 532
+                                            },
+                                            {
+                                                "x": 70,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 0,
+                                                "y": 0,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "14DA9452-CBCF-4B04-88FD-1184101C7856"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 0,
+                                                "y": 0,
+                                                "z": 20
+                                            },
+                                            {
+                                                "x": 70,
+                                                "y": 0,
+                                                "z": 20
+                                            },
+                                            {
+                                                "x": 70,
+                                                "y": 0,
+                                                "z": 38.1
+                                            },
+                                            {
+                                                "x": 0,
+                                                "y": 0,
+                                                "z": 38.1
+                                            }
+                                        ],
+                                        "slaveUuid": "E63FEB89-101D-4FA9-A112-61CE546C72BA"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 550.1,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 568.1,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 568.1,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 550.1,
+                                                "y": 0,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "A3C88F65-C37D-47AA-937E-6EA8999BA13B"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 1841.1,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 1859.1,
+                                                "y": 0,
+                                                "z": 0
+                                            },
+                                            {
+                                                "x": 1859.1,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 1841.1,
+                                                "y": 0,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "CE454246-0FA7-4999-8566-6D00A008C613"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 1859.1,
+                                                "y": 0,
+                                                "z": 10
+                                            },
+                                            {
+                                                "x": 2382,
+                                                "y": 0,
+                                                "z": 10
+                                            },
+                                            {
+                                                "x": 2382,
+                                                "y": 0,
+                                                "z": 19.1
+                                            },
+                                            {
+                                                "x": 1859.1,
+                                                "y": 0,
+                                                "z": 19.1
+                                            }
+                                        ],
+                                        "slaveUuid": "B12043AA-E9F2-4CAB-935A-FC29F8CB6276"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 568.1,
+                                                "y": 0,
+                                                "z": 10
+                                            },
+                                            {
+                                                "x": 1841.1,
+                                                "y": 0,
+                                                "z": 10
+                                            },
+                                            {
+                                                "x": 1841.1,
+                                                "y": 0,
+                                                "z": 19.1
+                                            },
+                                            {
+                                                "x": 568.1,
+                                                "y": 0,
+                                                "z": 19.1
+                                            }
+                                        ],
+                                        "slaveUuid": "69E0AA9E-27F4-4CD0-AE84-8EE741165A74"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 88,
+                                                "y": 0,
+                                                "z": 10
+                                            },
+                                            {
+                                                "x": 550.1,
+                                                "y": 0,
+                                                "z": 10
+                                            },
+                                            {
+                                                "x": 550.1,
+                                                "y": 0,
+                                                "z": 19.1
+                                            },
+                                            {
+                                                "x": 88,
+                                                "y": 0,
+                                                "z": 19.1
+                                            }
+                                        ],
+                                        "slaveUuid": "CBD5C9C5-DF37-4829-8783-71AAE4AAD339"
+                                    },
+                                    {
+                                        "faceIndex": 2,
+                                        "facePoints": [
+                                            {
+                                                "x": 551.6,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 1848.6,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 1848.6,
+                                                "y": 16.5,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 551.6,
+                                                "y": 16.5,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "7F756CD9-E671-4C7C-A202-C30A748CE3D8"
+                                    },
+                                    {
+                                        "faceIndex": 0,
+                                        "facePoints": [
+                                            {
+                                                "x": 310.1,
+                                                "y": 0,
+                                                "z": 19
+                                            },
+                                            {
+                                                "x": 328.1,
+                                                "y": 0,
+                                                "z": 19
+                                            },
+                                            {
+                                                "x": 328.1,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 310.1,
+                                                "y": 0,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "ACD280C4-A3C9-4A88-AE3E-CE19CB571052"
+                                    },
+                                    {
+                                        "faceIndex": 2,
+                                        "facePoints": [
+                                            {
+                                                "x": 1851.6,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 2398.6,
+                                                "y": 0,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 2398.6,
+                                                "y": 16.5,
+                                                "z": 550
+                                            },
+                                            {
+                                                "x": 1851.6,
+                                                "y": 16.5,
+                                                "z": 550
+                                            }
+                                        ],
+                                        "slaveUuid": "3B6E4617-0D6D-4C58-A679-3EA318967175"
+                                    }
+                                ],
+                                "veneer": {
+                                    "top": {
+                                        "code": 0,
+                                        "value": "0",
+                                        "BaseMaterial": {
+                                            "isInherit": true,
+                                            "id": "0x325003",
+                                            "name": "桦木"
+                                        },
+                                        "FaceMaterial": {
+                                            "isInherit": true,
+                                            "TextureId": "",
+                                            "TextureName": "",
+                                            "TextureUrl": "",
+                                            "Color": "",
+                                            "ColorName": "",
+                                            "ColorCode": "",
+                                            "EffectCode": "",
+                                            "EffectName": ""
+                                        }
+                                    },
+                                    "bottom": {
+                                        "code": 0,
+                                        "value": "0",
+                                        "BaseMaterial": {
+                                            "isInherit": true,
+                                            "id": "0x325003",
+                                            "name": "桦木"
+                                        },
+                                        "FaceMaterial": {
+                                            "isInherit": true,
+                                            "TextureId": "",
+                                            "TextureName": "",
+                                            "TextureUrl": "",
+                                            "Color": "",
+                                            "ColorName": "",
+                                            "ColorCode": "",
+                                            "EffectCode": "",
+                                            "EffectName": ""
+                                        }
+                                    }
+                                },
+                                "edgeset": {
+                                    "left": {
+                                        "code": "B",
+                                        "value": "1",
+                                        "BaseMaterial": {
+                                            "isInherit": true,
+                                            "id": "0x325003",
+                                            "name": "桦木"
+                                        },
+                                        "FaceMaterial": {
+                                            "isInherit": true,
+                                            "TextureId": "",
+                                            "TextureName": "",
+                                            "TextureUrl": "",
+                                            "Color": "",
+                                            "ColorName": "",
+                                            "ColorCode": "",
+                                            "EffectCode": "",
+                                            "EffectName": ""
+                                        }
+                                    },
+                                    "right": {
+                                        "code": "B",
+                                        "value": "1",
+                                        "BaseMaterial": {
+                                            "isInherit": true,
+                                            "id": "0x325003",
+                                            "name": "桦木"
+                                        },
+                                        "FaceMaterial": {
+                                            "isInherit": true,
+                                            "TextureId": "",
+                                            "TextureName": "",
+                                            "TextureUrl": "",
+                                            "Color": "",
+                                            "ColorName": "",
+                                            "ColorCode": "",
+                                            "EffectCode": "",
+                                            "EffectName": ""
+                                        }
+                                    },
+                                    "front": {
+                                        "code": "B",
+                                        "value": "1",
+                                        "BaseMaterial": {
+                                            "isInherit": true,
+                                            "id": "0x325003",
+                                            "name": "桦木"
+                                        },
+                                        "FaceMaterial": {
+                                            "isInherit": true,
+                                            "TextureId": "",
+                                            "TextureName": "",
+                                            "TextureUrl": "",
+                                            "Color": "",
+                                            "ColorName": "",
+                                            "ColorCode": "",
+                                            "EffectCode": "",
+                                            "EffectName": ""
+                                        }
+                                    },
+                                    "back": {
+                                        "code": "B",
+                                        "value": "1",
+                                        "BaseMaterial": {
+                                            "isInherit": true,
+                                            "id": "0x325003",
+                                            "name": "桦木"
+                                        },
+                                        "FaceMaterial": {
+                                            "isInherit": true,
+                                            "TextureId": "",
+                                            "TextureName": "",
+                                            "TextureUrl": "",
+                                            "Color": "",
+                                            "ColorName": "",
+                                            "ColorCode": "",
+                                            "EffectCode": "",
+                                            "EffectName": ""
+                                        }
+                                    }
+                                },
+                                "holeDir": "0",
+                                "holePosition": "speed",
+                                "holes": {
+                                    "unified": true,
+                                    "linkparts": {
+                                        "tapholeFace": [
+                                            "top",
+                                            "bottom",
+                                            "left",
+                                            "right",
+                                            "back",
+                                            "back"
+                                        ],
+                                        "default": [
+                                            {
+                                                "linkpartId": "1",
+                                                "linkpartName": "三合一1",
+                                                "ruleId": "1",
+                                                "ruleName": "三合一方案1"
+                                            },
+                                            {
+                                                "linkpartId": "",
+                                                "linkpartName": "",
+                                                "ruleId": "",
+                                                "ruleName": ""
+                                            }
+                                        ],
+                                        "left": [
+                                            {},
+                                            {}
+                                        ],
+                                        "right": [
+                                            {},
+                                            {}
+                                        ],
+                                        "top": [
+                                            {},
+                                            {}
+                                        ],
+                                        "bottom": [
+                                            {},
+                                            {}
+                                        ],
+                                        "front": [
+                                            {},
+                                            {}
+                                        ],
+                                        "back": [
+                                            {},
+                                            {}
+                                        ]
+                                    },
+                                    "drillData": {
+                                        "cncCode2": "B",
+                                        "cncCode1": "",
+                                        "bottom": [
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 70,
+                                                "wide": 18.2,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "x": 35,
+                                                "z": 29,
+                                                "x0": 35,
+                                                "y0": 29
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 70,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "x": 35,
+                                                "z": 541,
+                                                "x0": 35,
+                                                "y0": 541
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 70,
+                                                "x": 79,
+                                                "x0": 79,
+                                                "y0": 70
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 480,
+                                                "x": 79,
+                                                "x0": 79,
+                                                "y0": 480
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 531,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 89,
+                                                "x": 319.1,
+                                                "x0": 319.1,
+                                                "y0": 89
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 531,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 480,
+                                                "x": 319.1,
+                                                "x0": 319.1,
+                                                "y0": 480
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 70,
+                                                "x": 559.1,
+                                                "x0": 559.1,
+                                                "y0": 70
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 480,
+                                                "x": 559.1,
+                                                "x0": 559.1,
+                                                "y0": 480
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 70,
+                                                "x": 2391,
+                                                "x0": 2391,
+                                                "y0": 70
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 480,
+                                                "x": 2391,
+                                                "x0": 2391,
+                                                "y0": 480
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 70,
+                                                "x": 1850.1,
+                                                "x0": 1850.1,
+                                                "y0": 70
+                                            },
+                                            {
+                                                "name": "三合一方案一",
+                                                "type": "胶粒孔",
+                                                "diam": 10,
+                                                "depth": 13,
+                                                "spacing": "0",
+                                                "width": 550,
+                                                "wide": 18,
+                                                "faceSide": "0",
+                                                "y": 0,
+                                                "z": 480,
+                                                "x": 1850.1,
+                                                "x0": 1850.1,
+                                                "y0": 480
+                                            }
+                                        ]
+                                    }
+                                },
+                                "techpath": {
+                                    "id": "1",
+                                    "name": "常规线",
+                                    "code": "NOR",
+                                    "doTech": {
+                                        "Cut": true,
+                                        "EdgeBanding": true,
+                                        "EdgeDa": false,
+                                        "DrillHole": false,
+                                        "Paint": false
+                                    }
+                                },
+                                "length": "Y",
+                                "width": "Z",
+                                "height": "X",
+                                "boardCategory": "矩形板",
+                                "doorareaid": 1,
+                                "cncA": "",
+                                "cncB": "B",
+                                "subtype": "left",
+                                "size": {
+                                    "height": 18,
+                                    "width": 0,
+                                    "length": 0
+                                },
+                                "slotData": {
+                                    "bottom": [
+                                        {
+                                            "name": "9mm开槽",
+                                            "type": "开槽",
+                                            "diam": 10,
+                                            "depth": 6,
+                                            "faceSide": "0",
+                                            "x0": 1859.1,
+                                            "y0": 0,
+                                            "z0": 14.55,
+                                            "endX0": 2382,
+                                            "endY0": 0,
+                                            "endZ0": 14.55,
+                                            "x": 1859.1,
+                                            "y": 14.55,
+                                            "endX": 2382,
+                                            "endY": 14.55
+                                        },
+                                        {
+                                            "name": "9mm开槽",
+                                            "type": "开槽",
+                                            "diam": 10,
+                                            "depth": 6,
+                                            "faceSide": "0",
+                                            "x0": 568.1,
+                                            "y0": 0,
+                                            "z0": 14.55,
+                                            "endX0": 1841.1,
+                                            "endY0": 0,
+                                            "endZ0": 14.55,
+                                            "x": 568.1,
+                                            "y": 14.55,
+                                            "endX": 1841.1,
+                                            "endY": 14.55
+                                        },
+                                        {
+                                            "name": "9mm开槽",
+                                            "type": "开槽",
+                                            "diam": 10,
+                                            "depth": 6,
+                                            "faceSide": "0",
+                                            "x0": 88,
+                                            "y0": 0,
+                                            "z0": 14.55,
+                                            "endX0": 550.1,
+                                            "endY0": 0,
+                                            "endZ0": 14.55,
+                                            "x": 88,
+                                            "y": 14.55,
+                                            "endX": 550.1,
+                                            "endY": 14.55
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "BaseMaterial": {
+                            "isMultiply": false,
+                            "isInherit": false,
+                            "id": "1",
+                            "name": "中纤板"
+                        },
+                        "params": {
+                            "CornerD0": -1,
+                            "CornerD1": -1,
+                            "filletR": -1,
+                            "ChafmerD0": -1,
+                            "ChafmerD1": -1
+                        },
+                        "psl": "H",
+                        "psw": "D",
+                        "psh": "TL"
+                    },
+                    "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "children": [
+                        {
+                            "id": 230,
+                            "uuid": "1675FF68-8CBF-43E5-B0A7-A850AE3CB8E0",
+                            "type": "Object3D",
+                            "meta": {
+                                "type": "dxoDesignBoard",
+                                "top": 0,
+                                "bottom": 0,
+                                "left": 0,
+                                "right": 0.514,
+                                "front": 0,
+                                "behind": 0
+                            },
+                            "matrix": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "children": [],
+                            "draft": {
+                                "points": [
+                                    {
+                                        "id": 275,
+                                        "pointOrigin": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "lines": [
+                                            279,
+                                            282
+                                        ]
+                                    },
+                                    {
+                                        "id": 276,
+                                        "pointOrigin": [
+                                            0.018,
+                                            0,
+                                            0
+                                        ],
+                                        "lines": [
+                                            279,
+                                            280
+                                        ]
+                                    },
+                                    {
+                                        "id": 277,
+                                        "pointOrigin": [
+                                            0.018,
+                                            -0.55,
+                                            0
+                                        ],
+                                        "lines": [
+                                            280,
+                                            281
+                                        ]
+                                    },
+                                    {
+                                        "id": 278,
+                                        "pointOrigin": [
+                                            0,
+                                            -0.55,
+                                            0
+                                        ],
+                                        "lines": [
+                                            281,
+                                            282
+                                        ]
+                                    }
+                                ],
+                                "lines": [
+                                    {
+                                        "id": 279,
+                                        "p0": 275,
+                                        "p1": 276
+                                    },
+                                    {
+                                        "id": 280,
+                                        "p0": 276,
+                                        "p1": 277
+                                    },
+                                    {
+                                        "id": 281,
+                                        "p0": 277,
+                                        "p1": 278
+                                    },
+                                    {
+                                        "id": 282,
+                                        "p0": 278,
+                                        "p1": 275
+                                    }
+                                ],
+                                "holes": [],
+                                "draft": {
+                                    "id": 274,
+                                    "matrixBorn": [
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        -1,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1
+                                    ],
+                                    "matrixBoard": [
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        -0.044133,
+                                        0,
+                                        -1.3039,
+                                        1
+                                    ]
+                                },
+                                "shape": {
+                                    "controlType": "Length",
+                                    "controlValue": 2.4
+                                }
+                            },
+                            "width": "Z",
+                            "length": "Y",
+                            "materials": [
+                                415,
+                                415,
+                                415,
+                                415,
+                                415,
+                                415
+                            ]
+                        }
+                    ]
+                }

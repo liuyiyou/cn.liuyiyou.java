@@ -14,13 +14,17 @@ import org.junit.Test;
 
 /**
  * @author liuyiyou.cn
- * @date  2017年8月16日 下午8:27:02 
- * @version  
+ * @date 2017年8月16日 下午8:27:02
+ * @version
  */
 public class HashMapTest {
 
 	@Test
-	public void putTest(){
-		Map<String,Object> map = new HashMap<>();
+	public void putTest() {
+		Map<String, Object> map = new HashMap<>();
+
+		System.err.println(1 << 1);
+		System.err.println(2 << 1);
+		System.err.println(3 << 3); // 3* 2^3
 	}
 }
