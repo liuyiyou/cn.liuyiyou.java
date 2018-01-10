@@ -10,7 +10,6 @@ package cn.liuyiyou.java8.model;
 import java.util.Date;
 import java.util.List;
 
-import cn.liuyiyou.common.model.Prod;
 
 /**
  * @author liuyiyou.cn

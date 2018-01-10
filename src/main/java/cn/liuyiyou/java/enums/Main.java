@@ -8,9 +8,10 @@
  */
 package cn.liuyiyou.java.enums;
 
+//import net.sf.json.JSON;
+
 import java.util.Date;
 
-import cn.liuyiyou.common.utils.JsonUtil;
 
 /**
  * 名称: Main <br/>
@@ -43,8 +44,8 @@ public class Main {
 		}
 
 		String json = "{\"id\":1,\"man\":true,\"name\":\"liuyiyiu\",\"birthday\":\"2017-07-25 16:50:20\"}";
-		User u = JsonUtil.json2Object(json, User.class);
-		System.out.println(u.getName() + "\t" + u.getBirthday());
+		//User u = JSON.json2Object(json, User.class);
+		//System.out.println(u.getName() + "\t" + u.getBirthday());
 	}
 }
 
