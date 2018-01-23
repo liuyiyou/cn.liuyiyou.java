@@ -10,6 +10,10 @@ package cn.liuyiyou.java8.stream;
 import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+
+import com.google.common.collect.Lists;
 import org.junit.Test;
 
 /**
@@ -61,6 +65,33 @@ public class Main {
 		List<Integer> numbers = Arrays.asList();
 		long count = numbers.parallelStream().filter(n -> n % 2 == 1).count();
 		assertEquals(count, 0);
+	}
+
+
+	@Test
+	public void test1(){
+		List<Integer> nums = Lists.newArrayList(1,null,3,4,null,6);
+		//过滤
+		long count = nums.stream().filter(num -> num != null).count();
+		System.out.println(count);
+
+
+
+		Stream<Integer> integerStream = Stream.of(1,null,3,4,null,6);
+		long count2 = nums.stream().filter(num -> num != null).count();
+		System.out.println(count2);
+
+
+		Stream.generate(new Supplier<Double>() {
+			@Override
+			public Double get() {
+				return Math.random();
+			}
+		});
+		Stream.generate(() -> Math.random());
+		Stream.generate(Math::random);
+
+		Stream.generate(() -> "1111".length());
 	}
 
 }

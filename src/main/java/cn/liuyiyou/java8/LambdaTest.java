@@ -7,9 +7,16 @@
  */
 package cn.liuyiyou.java8;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
+import cn.liuyiyou.model.BuynowProd;
 import org.junit.Test;
+
 
 /**
  * @author liuyiyou.cn
@@ -39,4 +46,15 @@ public class LambdaTest {
 		return x + y;
 	}
 
+
+
+	public void test(){
+		List<BuynowProd> buynowProds = new ArrayList<>();
+		Map<Long, List<BuynowProd>> mapList = buynowProds.parallelStream().collect(Collectors.groupingBy(x->x.getProdId()));
+		Map<Long, BuynowProd> buynowProdMap = buynowProds.parallelStream().collect(Collectors.toMap(BuynowProd::getSkuId, (p) -> p));
+		Integer cnt  = (null != mapList? mapList.size(): 0);
+		List<BuynowProd> prods = new ArrayList<>();
+		Map<Long,List<BuynowProd>> submitProds= prods.parallelStream().collect(Collectors.groupingBy(x->x.getProdId()));
+		Iterator<Long> iterator = submitProds.keySet().iterator();
+	}
 }
