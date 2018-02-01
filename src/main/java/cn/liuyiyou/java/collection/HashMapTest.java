@@ -22,9 +22,28 @@ public class HashMapTest {
 	@Test
 	public void putTest() {
 		Map<String, Object> map = new HashMap<>();
+		map.put(null,"aaa");
+		System.out.println(map.get(null));
+	}
 
-		System.err.println(1 << 1);
-		System.err.println(2 << 1);
-		System.err.println(3 << 3); // 3* 2^3
+	@Test
+	public void getTest(){
+		Map<String,String> userMap = new HashMap<String,String>();
+		userMap.put("1", "1");
+		System.out.println(userMap.get("1"));  //有对象
+		System.out.println(userMap.get(1));  //null
+
+		Map  userMap3 = new HashMap ();
+		userMap3.put("1", "1");
+		userMap3.put(1, "1");
+		System.out.println(userMap3.get("1"));  //有对象
+		System.out.println(userMap3.get(1));  //null
+
+
+		Map<Object,String> userMap2 = new HashMap<Object, String>();
+		userMap2.put("1", "1");
+		userMap2.put(1, "1");
+		System.out.println(userMap2.get("1"));  //1
+		System.out.println(userMap2.get(1));  //1
 	}
 }
