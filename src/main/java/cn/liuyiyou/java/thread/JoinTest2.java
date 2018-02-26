@@ -36,8 +36,8 @@ public class JoinTest2 extends Thread {
 
 	public static void main(String[] args) {
 		System.out.println(Thread.currentThread().getName() + "主线程运行开始!");
-		Thread1 mTh1 = new Thread1("A");
-		Thread1 mTh2 = new Thread1("B");
+		Thread mTh1 = new Thread("A");
+		Thread mTh2 = new Thread("B");
 		mTh1.start();
 		mTh2.start();
 		try {
