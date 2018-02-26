@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.language.regex;
+package cn.liuyiyou.java.base.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -54,19 +54,18 @@ public class RegexLauguage {
         p("\\".matches("\\\\"));//true
 
 
-
         // p("abc".matches("[a-z]{3}")); //true
-       // p("123".matches("[0-9]{3}")); //true
-       // p("123".matches("[0-9]*"));
+        // p("123".matches("[0-9]{3}")); //true
+        // p("123".matches("[0-9]*"));
     }
 
 
     /**
      * matches()判断字符串是否匹配某个表达式，"."表示任何一个字符
      */
-    public static void matches(){
-       boolean  result =   "abc".matches("...");
-       System.out.println(result);
+    public static void matches() {
+        boolean result = "abc".matches("...");
+        System.out.println(result);
 
         Pattern p = Pattern.compile("[a-z]{3}");
         //进行匹配，并将匹配结果放在Matcher对象中
@@ -76,21 +75,21 @@ public class RegexLauguage {
 
     //^[1-9]d*$　
     //匹配正整数
-   public static boolean match1(){
-       String regex = "^[1-9]";
-       Pattern pattern = Pattern.compile(regex);
-       Matcher matcher = pattern.matcher("123");
-       return matcher.matches();
-   }
-
-
-    public static void testB(){
-        String  str ="hi ! his a boy";
-        Pattern pattern = Pattern.compile("^b");
-      //  System.out.println(result);
+    public static boolean match1() {
+        String regex = "^[1-9]";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher("123");
+        return matcher.matches();
     }
 
-    public static void p(boolean  result){
+
+    public static void testB() {
+        String str = "hi ! his a boy";
+        Pattern pattern = Pattern.compile("^b");
+        //  System.out.println(result);
+    }
+
+    public static void p(boolean result) {
         System.out.println(result);
     }
 }

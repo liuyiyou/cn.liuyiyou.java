@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.language;
+package cn.liuyiyou.java.base;
 
 import org.junit.Test;
 
