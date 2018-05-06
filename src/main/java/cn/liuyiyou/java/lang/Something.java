@@ -5,7 +5,7 @@
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  *
  */
-package cn.liuyiyou.java.base;
+package cn.liuyiyou.java.lang;
 
 /**
  * @author liuyiyou.cn

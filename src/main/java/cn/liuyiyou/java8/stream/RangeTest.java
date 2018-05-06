@@ -28,7 +28,8 @@ public class RangeTest {
 
         //对列表元素进行统计
         IntSummaryStatistics iss = list.stream().collect(Collectors.summarizingInt(value -> value));
-        System.out.println(iss);//IntSummaryStatistics{count=99, sum=4950, min=1, average=50.000000, max=99}
+        System.out.println(iss);
+        //IntSummaryStatistics{count=99, sum=4950, min=1, average=50.000000, max=99}
 
 
         //根据List创建Map

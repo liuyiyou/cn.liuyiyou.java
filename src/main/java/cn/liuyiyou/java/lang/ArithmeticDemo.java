@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.base;
+package cn.liuyiyou.java.lang;
 
 /***
  * @author: liuyiyou

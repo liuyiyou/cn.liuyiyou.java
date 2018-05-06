@@ -14,6 +14,7 @@ import org.junit.Test;
  * @date 2017年10月17日 下午5:43:40
  * @version
  */
+@SuppressWarnings("ALL")
 public class BaseLambdaTest {
 
 	@Test

@@ -31,7 +31,6 @@ public class LambdaTest {
 
 		Arrays.asList("a", "b", "c").forEach(e -> {
 			System.out.println(e);
-			System.out.println(e);
 		});
 	}
 

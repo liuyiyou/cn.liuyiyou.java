@@ -4,7 +4,7 @@
  * 日期: 2017年8月9日下午10:05:41
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  */
-package cn.liuyiyou.java.base;
+package cn.liuyiyou.java.lang;
 
 /**
  * @author liuyiyou.cn
