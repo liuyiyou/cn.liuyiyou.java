@@ -5,7 +5,7 @@
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  *
  */
-package cn.liuyiyou.java8.model;
+package cn.liuyiyou.model;
 
 import java.util.Date;
 
