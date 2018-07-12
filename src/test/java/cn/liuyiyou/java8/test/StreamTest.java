@@ -7,12 +7,11 @@
  */
 package cn.liuyiyou.java8.test;
 
-import java.util.List;
-
+import cn.liuyiyou.model.Prod;
 import org.junit.Assert;
 import org.junit.Test;
 
-import cn.liuyiyou.java8.model.Prod;
+import java.util.List;
 
 /**
  * @author liuyiyou.cn

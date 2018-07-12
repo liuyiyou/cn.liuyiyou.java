@@ -7,11 +7,11 @@
  */
 package cn.liuyiyou.java8.test;
 
+import cn.liuyiyou.model.Prod;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import cn.liuyiyou.java8.model.Prod;
 
 /**
  * @author liuyiyou.cn
