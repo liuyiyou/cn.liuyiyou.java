@@ -23,4 +23,13 @@ public class StringTest {
         System.out.println(s.getBytes());
         System.out.println(s.getBytes());
     }
+
+
+    @Test
+    public void deleteChartAtTest(){
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("aaaaa;");
+        String s = stringBuffer.deleteCharAt(stringBuffer.length()-1).toString();
+        System.out.println(s);
+    }
 }

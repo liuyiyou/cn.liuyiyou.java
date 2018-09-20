@@ -1,5 +1,7 @@
 package cn.liuyiyou.java.collection;
 
+import com.google.common.collect.MapDifference;
+import com.google.common.collect.Maps;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -46,5 +48,19 @@ public class MapTest {
         resultMap.keySet().forEach(key -> {
             System.out.println(resultMap.get(key));
         });
+    }
+
+    @Test
+    public void testDiff(){
+
+        Map<Long ,Integer> m1 = new HashMap<>();
+        m1.put(17020200080001L,1);
+        m1.put(17020200090001L,2);
+        m1.put(17020200100001L,2);
+        Map<Long ,Integer> m2 = new HashMap<>();
+        m1.put(17020200090001L,1);
+        m1.put(17020200100001L,1);
+        MapDifference<Long, Integer> difference = Maps.difference(m1, m2);
+        System.out.println(difference);
     }
 }
