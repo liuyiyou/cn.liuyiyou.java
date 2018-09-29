@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import cn.liuyiyou.model.SubsProd;
 import org.junit.Test;
 
 /**
@@ -81,33 +82,3 @@ public class GroupByTest {
 
 }
 
-class SubsProd {
-	int id;
-	Long actId;
-	String prodName;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public Long getActId() {
-		return actId;
-	}
-
-	public void setActId(Long actId) {
-		this.actId = actId;
-	}
-
-	public String getProdName() {
-		return prodName;
-	}
-
-	public void setProdName(String prodName) {
-		this.prodName = prodName;
-	}
-
-}
