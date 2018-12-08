@@ -6,13 +6,19 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * @author: liuyiyou@yanglaoban.com
+ * @author: liuyiyou
  * @date: 2018/9/26
  * @version: V1.0
- * @Copyright: 2018 yanglaoban.com Inc. All rights reserved.
+ * @Copyright: 2018 liuyiyou.cn Inc. All rights reserved.
  */
 public class IOServer {
 
+    /**
+     * 启动服务端,监听8080端口
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         ServerSocket serverSocket = new ServerSocket(8000);
         new Thread(() -> {
@@ -36,6 +42,6 @@ public class IOServer {
                     e.printStackTrace();
                 }
             }
-        }). start();
+        }).start();
     }
 }
