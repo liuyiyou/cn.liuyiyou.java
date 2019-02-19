@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.collection;
+package cn.liuyiyou.java.collection.set;
 
 import com.google.common.collect.Sets;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import java.util.Set;
  * @date: 2018/9/14
  * @Copyright 2018 liuyiyou.cn Inc. All rights reserved
  */
-public class SetTest {
+public class SetExample {
 
 
     /**

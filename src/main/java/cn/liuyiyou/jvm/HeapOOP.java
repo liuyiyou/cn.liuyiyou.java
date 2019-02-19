@@ -5,7 +5,7 @@
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  *
  */
-package cn.liuyiyou.java.jvm;
+package cn.liuyiyou.jvm;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,8 @@ public class HeapOOP {
 
 	static class OOMObject{}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
+		Thread.sleep(5000L);
 		List<OOMObject> list = new ArrayList<>();
 		while(true){
 			list.add(new OOMObject());

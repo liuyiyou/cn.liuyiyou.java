@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.collection;
+package cn.liuyiyou.java.collection.map;
 
 import com.google.common.collect.MapDifference;
 import com.google.common.collect.Maps;
@@ -15,12 +15,12 @@ import java.util.Set;
  * @author: liuyiyou
  * @date: 2018/1/14
  */
-public class MapTest {
+public class MapExample {
 
 
     @Test
     public void test() {
-        Map map = new HashMap();
+        Map<Long,Integer> map = new HashMap();
         map.put(11010100050001L, 5);
         map.put(11010100050002L, 5);
         map.put(11010100050003L, 4);
@@ -30,7 +30,7 @@ public class MapTest {
 
         Map resultMap = new HashMap();
 
-        Set types = new HashSet<>();
+        Set<Integer> types = new HashSet<>();
         map.values().forEach(value -> {
             if(value!=null){
                 types.add(value);

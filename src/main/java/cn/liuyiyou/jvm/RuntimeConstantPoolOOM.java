@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.jvm;
+package cn.liuyiyou.jvm;
 
 
 import java.util.ArrayList;
