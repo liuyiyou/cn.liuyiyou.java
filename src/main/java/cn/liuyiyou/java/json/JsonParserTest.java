@@ -1,8 +1,10 @@
 package cn.liuyiyou.java.json;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
 import com.google.common.collect.Lists;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
