@@ -17,7 +17,7 @@ public class DataSourceJdbc {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/blog");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/ibalife_user");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         try {
             return dataSource.getConnection();
@@ -47,8 +47,7 @@ public class DataSourceJdbc {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         DataSourceJdbc simpleJdbc = new DataSourceJdbc();
-        simpleJdbc.select("select * from t_area");
-        simpleJdbc.select("select * from t_area");
+        simpleJdbc.select("select * from user");
 
     }
 }

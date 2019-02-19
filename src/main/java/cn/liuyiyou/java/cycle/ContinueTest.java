@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.cicrle;
+package cn.liuyiyou.java.cycle;
 
 /***
  * @author: liuyiyou

@@ -1,10 +1,4 @@
-/**
- * 所属项目:cn.liuyiyou.java
- * 文件名称:cn.liuyiyou.java.language.BreakTest.java
- * 日期: 2017年10月23日下午7:37:07
- * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
- */
-package cn.liuyiyou.java.cicrle;
+package cn.liuyiyou.java.cycle;
 
 import org.junit.Test;
 
@@ -16,7 +10,7 @@ import java.util.List;
  * @date 2017年10月23日 下午7:37:07
  * @version
  */
-public class BreakTest {
+public class BreakExample {
 
     List<Integer> lists1 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 

@@ -19,21 +19,15 @@ public class JsonParserTest {
         String s = JSON.toJSONString(getProds());
         System.out.println(s);
 
-//        //type= jsonobject
-//        ArrayList arrayList = JSON.parseObject(s, ArrayList.class);
-//        System.out.println(arrayList);
-//
-//        //type = Prod
-//        ArrayList<Prod> prods = JSON.parseObject(s,new TypeReference<ArrayList<Prod>>(){});
-//        System.out.println(prods);
+        //type= jsonobject
+        ArrayList arrayList = JSON.parseObject(s, ArrayList.class);
+        System.out.println(arrayList);
+
+        //type = Prod
+        ArrayList<Prod> prods = JSON.parseObject(s,new TypeReference<ArrayList<Prod>>(){});
+        System.out.println(prods);
     }
 
-
-//    public static <T extends Serializable> T getTs(){
-//
-//
-//
-//    }
 
    public static List<Prod> getProds(){
        List<Prod> prods = Lists.newArrayList();

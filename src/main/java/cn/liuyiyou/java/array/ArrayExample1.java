@@ -3,7 +3,7 @@ package cn.liuyiyou.java.array;
 /**
  * @link https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/java/nutsandbolts/examples/ArrayDemo.java
  */
-public class ArrayDemo {
+public class ArrayExample1 {
 
     public static void main(String[] args) {
         // declares an array of integers
