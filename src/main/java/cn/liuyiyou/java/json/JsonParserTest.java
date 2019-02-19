@@ -1,11 +1,8 @@
 package cn.liuyiyou.java.json;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.TypeReference;
 import com.google.common.collect.Lists;
 
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -29,13 +26,13 @@ public class JsonParserTest {
     }
 
 
-   public static List<Prod> getProds(){
-       List<Prod> prods = Lists.newArrayList();
-        IntStream.range(1,10).forEach(i->{
-                Prod p  = new Prod();
-                p.setId(i);
-                p.setName("N"+i);
-                prods.add(p);
+    public static List<Prod> getProds() {
+        List<Prod> prods = Lists.newArrayList();
+        IntStream.range(1, 10).forEach(i -> {
+            Prod p = new Prod();
+            p.setId(i);
+            p.setName("N" + i);
+            prods.add(p);
 
         });
         return prods;

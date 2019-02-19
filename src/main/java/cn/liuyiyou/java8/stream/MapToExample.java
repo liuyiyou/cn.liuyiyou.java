@@ -3,6 +3,7 @@ package cn.liuyiyou.java8.stream;
 import com.google.common.collect.Lists;
 import lombok.Builder;
 import lombok.Data;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,14 +18,22 @@ import java.util.stream.Stream;
  */
 public class MapToExample {
 
-    public static void main(String[] args) {
-        listSum();
+    /**
+     * 列表求和
+     */
+    @Test
+    public void listSum2() {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        int sum = numbers.stream().mapToInt(Integer::intValue).sum();
+        int sum2 = numbers.stream().reduce(0, Integer::sum);
+        System.out.println(sum);
+        System.out.println(sum2);
     }
-
 
     /**
      * 将List中的某个字段求和
      */
+    @Test
     public static void listSum() {
 //        Optional.ofNullable(getSkus()).map(Sku::getSaled).orElse();
 

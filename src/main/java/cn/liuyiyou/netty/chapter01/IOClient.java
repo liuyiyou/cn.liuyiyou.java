@@ -13,12 +13,12 @@ import java.util.Date;
 public class IOClient {
 
     public static void main(String[] args) {
-       new Thread(new ServerThread("server")).start();
+        new Thread(new ServerThread("server")).start();
     }
 }
 
 
-class ServerThread implements Runnable{
+class ServerThread implements Runnable {
     private String name;
 
     public ServerThread(String name) {

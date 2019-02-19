@@ -1,6 +1,8 @@
 package cn.liuyiyou.java8.predicate;
 
+import cn.liuyiyou.model.User;
 import com.google.common.base.Function;
+import org.junit.Test;
 
 import java.util.Objects;
 import java.util.function.Predicate;
@@ -14,13 +16,11 @@ import java.util.function.Supplier;
 public class PredicateTest {
 
 
-    public static void main(String[] args) {
-
-        supplier();
-
-    }
-
-    public static  void predicate(){
+    /**
+     * predicate: 断言
+     */
+    @Test
+    public void predicate() {
         Predicate<String> predicate = (s -> s.length() > 0);
         boolean test = predicate.test("foo");
         boolean foot = predicate.negate().test("foot");
@@ -31,41 +31,23 @@ public class PredicateTest {
         System.out.println(notNull.test(null));
     }
 
-    public static void function(){
+    /**
+     * 函数：
+     */
+    public void function() {
         Function<String, Integer> toInteger = Integer::valueOf;
         Integer apply = toInteger.apply("123");
 
     }
 
 
-    public static void  supplier(){
+    public void supplier() {
         Supplier<User> userSupplier = User::new;
         System.out.println(userSupplier.get());
-        System.out.println(userSupplier.get().getName());
-
+        System.out.println(userSupplier.get().getId());
 
         User u = new User();
-        System.out.println(u.getName());
+        System.out.println(u.getId());
     }
 }
 
-class User {
-    private String id;
-    private String name;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
