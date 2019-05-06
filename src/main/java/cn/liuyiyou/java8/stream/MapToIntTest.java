@@ -4,14 +4,15 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.OptionalInt;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toList;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 public class MapToIntTest {
 
@@ -60,7 +61,7 @@ public class MapToIntTest {
         List<Integer> numbers = IntStream.iterate(0, n -> n + 3).limit(3)
                 .boxed().collect(Collectors.toList());
 
-       // assertThat(numbers, contains(new Integer(0), new Integer(3), new Integer(6)));
+        // assertThat(numbers, contains(new Integer(0), new Integer(3), new Integer(6)));
     }
 
     @Test
@@ -107,10 +108,12 @@ public class MapToIntTest {
     @Test
     public void convert_to_stream_of_objects() {
 
-        int[] numbers = { 1, 2, 3, 4, 5, 6 };
+        int[] numbers = {1, 2, 3, 4, 5, 6};
+
 
         List<Integer> listOfInteger = Arrays.stream(numbers).boxed()
                 .collect(Collectors.toList());
+
 
 //        assertThat(
 //                listOfInteger,
@@ -119,6 +122,26 @@ public class MapToIntTest {
 
     }
 
+
+    @Test
+    public void test() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+        list.stream().reduce(new BinaryOperator<Integer>() {
+            @Override
+            public Integer apply(Integer integer, Integer integer2) {
+                return integer + integer2;
+            }
+        });
+
+        //1-2=-1
+        //-1-3=-4
+        //-4-4=-8
+        //-8-5=-13
+        Integer result = list.stream().reduce((integer, integer2) -> integer - integer2).orElse(0);
+        System.out.println(result);
+
+        Comparator.comparing(a -> 2, Integer::compareTo);
+    }
 
     @Test
     public void provide_default() {
@@ -142,13 +165,13 @@ public class MapToIntTest {
     }
 
 
-    public static List<Person>  buildPerson(){
+    public static List<Person> buildPerson() {
 //        List<Integer> collect = IntStream.range(1, 100).boxed().collect(Collectors.toList());
         List<Person> people = new ArrayList<>();
-        IntStream.range(1,20).forEach(i->{
+        IntStream.range(1, 20).forEach(i -> {
             Person person = new Person();
             person.setId(i);
-            person.setName("name"+i);
+            person.setName("name" + i);
             people.add(person);
         });
         System.out.println(people.size());

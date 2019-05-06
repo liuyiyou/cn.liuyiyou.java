@@ -25,11 +25,9 @@ public class SimpleJdbc {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(url, username, password);
             System.out.println(connection);
-        } catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
+        } finally {
             JdbcUtils.close(connection);
         }
     }

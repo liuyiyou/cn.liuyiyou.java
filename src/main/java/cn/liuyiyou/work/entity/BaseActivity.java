@@ -1,8 +1,11 @@
 package cn.liuyiyou.work.entity;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
 
+@Data
 public class BaseActivity implements Serializable {
     public static final Byte STATUS_WAITING_START = 0; //未开始
     public static final Byte STATUS_STARTED = 1; //开始
@@ -150,126 +153,6 @@ public class BaseActivity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Byte getType() {
-        return type;
-    }
-
-    public void setType(Byte type) {
-        this.type = type;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Date getPreTime() {
-        return preTime;
-    }
-
-    public void setPreTime(Date preTime) {
-        this.preTime = preTime;
-    }
-
-    public Date getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
-
-    public Date getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc == null ? null : desc.trim();
-    }
-
-    public Byte getStatus() {
-        return status;
-    }
-
-    public void setStatus(Byte status) {
-        this.status = status;
-    }
-
-    public String getChannel() {
-        return channel;
-    }
-
-    public void setChannel(String channel) {
-        this.channel = channel;
-    }
-
-    public String getConfig() {
-        return config;
-    }
-
-    public void setConfig(String config) {
-        this.config = config == null ? null : config.trim();
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public Integer getWeight() {
-        return weight;
-    }
-
-    public void setWeight(Integer weight) {
-        this.weight = weight;
-    }
-
-    public Byte[] getStatusArray() {
-        return statusArray;
-    }
-
-    public void setStatusArray(Byte[] statusArray) {
-        this.statusArray = statusArray;
-    }
-
-    public Byte getPutStatus() {
-        return putStatus;
-    }
-
-    public void setPutStatus(Byte putStatus) {
-        this.putStatus = putStatus;
-    }
 
 
 }

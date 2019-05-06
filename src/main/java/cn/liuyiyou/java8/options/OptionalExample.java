@@ -2,6 +2,7 @@ package cn.liuyiyou.java8.options;
 
 import cn.liuyiyou.model.User;
 import cn.liuyiyou.service.UserService;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -15,6 +16,49 @@ import java.util.Optional;
  * @Copyright: 2018 yanglaoban.com Inc. All rights reserved.
  */
 public class OptionalExample {
+
+
+    @Test(expected = NullPointerException.class)
+    public void getCarInsuranceNameTest() {
+        Person person = new Person();
+        getCarInsuranceName(person);
+    }
+
+    public String getCarInsuranceName(Person person) {
+        return person.getCar().getInsurance().getName();
+    }
+
+    public String getCarInsuranceName_1(Person person) {
+        if (person != null) {
+            Car car = person.getCar();
+            if (car != null) {
+                Insurance insurance = car.getInsurance();
+                if (insurance != null) {
+                    String name = insurance.getName();
+                    return name;
+                }
+            }
+        }
+        return StringUtils.EMPTY;
+    }
+
+    public String getCarInsuranceName_2(Person person) {
+        String result = StringUtils.EMPTY;
+        if (person == null) {
+            return result;
+        }
+        Car car = person.getCar();
+        if (car == null) {
+            return result;
+        }
+        Insurance insurance = car.getInsurance();
+        if (insurance == null) {
+            return result;
+        }
+        result = insurance.getName();
+        return result;
+    }
+
 
     @Test
     public void method() {
