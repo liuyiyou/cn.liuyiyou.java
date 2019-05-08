@@ -41,7 +41,7 @@ public class SimpleJdbc {
 
     }
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         IntStream.range(1, 1000).forEach(i -> {
             SimpleJdbc simpleJdbc = new SimpleJdbc();
             simpleJdbc.init();

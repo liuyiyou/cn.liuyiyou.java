@@ -12,10 +12,7 @@ import java.util.stream.Stream;
 import static java.util.stream.Collectors.toList;
 
 /**
- * @author: liuyiyou@yanglaoban.com
- * @date: 2018/9/20
- * @version: V1.0
- * @Copyright: 2018 yanglaoban.com Inc. All rights reserved.
+ * Stream实例
  */
 public class StreamExample1 {
 
@@ -100,8 +97,6 @@ public class StreamExample1 {
                 "        }\n" +
                 "    ]";
         JSONArray jsonArray = JSON.parseArray(s);
-
-        JSONArray a = new JSONArray();
         List<JSONObject> jsonObjects = jsonArray.parallelStream().map(i -> {
             JSONObject o = (JSONObject) i;
             o.put("test", "test");

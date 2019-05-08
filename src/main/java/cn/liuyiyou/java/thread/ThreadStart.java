@@ -1,9 +1,5 @@
 package cn.liuyiyou.java.thread;
 
-import javafx.concurrent.Task;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.TimerTask;
 
 /**
@@ -16,17 +12,16 @@ public class ThreadStart {
 
     /**
      * 第一种：Thread
-     * */
-    public void type1(){
-        Thread thread = new Thread("type1"){
-           public void run(){
-               System.out.println("run type1");
-           }
-        } ;
+     */
+    public void type1() {
+        Thread thread = new Thread("type1") {
+            public void run() {
+                System.out.println("run type1");
+            }
+        };
         thread.start();
 
     }
-
 
 
     public static void main(String[] args) {
@@ -48,12 +43,9 @@ public class ThreadStart {
     }
 
 
+}
 
-
-
-  }
-
-class MyThread extends Thread{
+class MyThread extends Thread {
 
     @Override
     public void run() {
@@ -62,7 +54,7 @@ class MyThread extends Thread{
     }
 }
 
-class  MyRunnable implements Runnable{
+class MyRunnable implements Runnable {
     @Override
     public void run() {
         System.out.println("run type3");

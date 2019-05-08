@@ -5,7 +5,7 @@
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  *
  */
-package cn.liuyiyou.java8;
+package cn.liuyiyou.java8.ofnull;
 
 import java.util.ArrayList;
 import java.util.Arrays;

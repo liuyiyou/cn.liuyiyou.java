@@ -1,5 +1,6 @@
 package cn.liuyiyou.java8.ofnull;
 
+import cn.liuyiyou.model.User;
 import com.google.common.collect.Lists;
 import org.junit.Test;
 
@@ -22,10 +23,8 @@ public class OfNullableTest {
         List<User> users = getUsers();
         ofNullable(users).ifPresent(notNullUsers -> {
             notNullUsers.forEach(user -> ofNullable(user).ifPresent(notNullUser -> {
-                notNullUser.getName().length();
-                ofNullable(notNullUser.getAddress()).ifPresent(address -> {
-                    System.out.println(address.getCity());
-                });
+                notNullUser.getUserName().length();
+                ofNullable(notNullUser.getAddress()).ifPresent(address -> System.out.println(address.getCity()));
             }));
         });
     }
@@ -39,7 +38,7 @@ public class OfNullableTest {
         for (int i = 0; i < 10; i++) {
             User user = new User();
             user.setId(i);
-            user.setName("name" + i);
+            user.setUserName("name" + i);
             Address address = new Address();
             address.setCity("city" + i);
             users.add(user);
@@ -57,14 +56,14 @@ public class OfNullableTest {
         for (int i = 0; i < 10; i++) {
             User user = new User();
             user.setId(i);
-            user.setName("name" + i);
+            user.setUserName("name" + i);
             Address address = new Address();
             address.setCity("city" + i);
             users.add(user);
         }
         User user = new User();
         user.setId(11);
-        user.setName("name" + 11);
+        user.setUserName("name" + 11);
         user.setAddress(null);
         users.add(user);
 

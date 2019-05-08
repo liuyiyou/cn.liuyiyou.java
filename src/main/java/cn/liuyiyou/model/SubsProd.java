@@ -6,9 +6,9 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class SubsProd {
-    int id;
-    Long actId;
-    String prodName;
-
-
+    private int id;
+    private Long actId;
+    private String prodName;
+    private Float taxPrice;
+    private Float taxRate;
 }

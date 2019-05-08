@@ -1,10 +1,10 @@
-package cn.liuyiyou.java.thread;
+package cn.liuyiyou.java.thread.concurrent.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 
 public class Add {
 
-    private volatile int  count = 0;
+    private volatile int count = 0;
 
     public static void main(String[] args) {
         CountDownLatch countDownLatch = new CountDownLatch(4);

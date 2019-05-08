@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
 
 /***
  *
@@ -34,7 +35,7 @@ public class CouponActivity {
     }
 
 
-    private static List<CouponActivity> couponActivities(){
+    private static List<CouponActivity> couponActivities() {
         List<CouponActivity> list = Lists.newArrayList();
         CouponActivity couponActivity = new CouponActivity();
         couponActivity.setActId(10002L);
@@ -57,7 +58,6 @@ public class CouponActivity {
         System.out.println(list.get(1).actId);
 
         list.sort(Comparator.comparing(CouponActivity::getActId).reversed());
-
         System.out.println(list.get(0).actId);
         System.out.println(list.get(1).actId);
     }

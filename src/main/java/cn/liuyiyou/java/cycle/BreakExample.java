@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * @author liuyiyou.cn
  * @date 2017年10月23日 下午7:37:07
- * @version
  */
 public class BreakExample {
 
