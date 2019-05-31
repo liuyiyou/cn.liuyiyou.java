@@ -1,13 +1,14 @@
 package cn.liuyiyou.java.jdbc;
 
+import cn.liuyiyou.service.SubsProdService;
 import com.alibaba.druid.util.JdbcUtils;
+import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.stream.IntStream;
 
 /***
  * @author: liuyiyou
@@ -41,10 +42,16 @@ public class SimpleJdbc {
 
     }
 
-    public static void main(String[] args) {
-        IntStream.range(1, 1000).forEach(i -> {
-            SimpleJdbc simpleJdbc = new SimpleJdbc();
-            simpleJdbc.init();
-        });
+//    public static void main(String[] args) {
+//        IntStream.range(1, 1000).forEach(i -> {
+//            SimpleJdbc simpleJdbc = new SimpleJdbc();
+//            simpleJdbc.init();
+//        });
+//    }
+
+    @Test
+    public void getSubsProds() throws SQLException {
+        SubsProdService subsProdService = new SubsProdService();
+        subsProdService.nullSubsProds();
     }
 }
