@@ -10,10 +10,8 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * @author: liuyiyou@yanglaoban.com
  * @date: 2018/9/20
  * @version: V1.0
- * @Copyright: 2018 yanglaoban.com Inc. All rights reserved.
  */
 public class OptionalExample {
 
