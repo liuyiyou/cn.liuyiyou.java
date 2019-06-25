@@ -21,10 +21,11 @@ public class SetExample {
     public void testRetail() {
         Set<Integer> s1 = Sets.newHashSet(1, 2, 3);
         Set<Integer> s2 = Sets.newHashSet(2, 3, 4);
+        Set<Integer> s3 = Sets.newHashSet(2, 3, 4);
 
-        System.out.println("{1,2,3} 交集 {2,3,4}" + s1.retainAll(s1));
+        System.out.println("{1,2,3} 交集 {2,3,4}" + s1.retainAll(s2));
 
-        Sets.SetView<Integer> union = Sets.intersection(s1, s2);
+        Sets.SetView<Integer> union = Sets.intersection(s2, s2);
         System.out.println(union.size());
 
 
