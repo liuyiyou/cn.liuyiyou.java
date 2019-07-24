@@ -3,8 +3,10 @@ package cn.liuyiyou.java.collection.list;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author: liuyiyou.cn
@@ -27,12 +29,23 @@ public class ArrayListExample {
         System.out.println(list.size());
     }
 
+    @Test(expected = UnsupportedOperationException.class)
+    public void testRemove() {
+        List<String> list = Arrays.asList("a", "b", "c", "d");
+        for (int i = 0; i < list.size(); i++) {
+            list.remove(i);
+            list.removeIf(Objects::nonNull);
+        }
+        System.out.println(list);
+
+    }
+
 
     @Test
-    public void remove(){
+    public void remove() {
         List<String> list = getList();
         Iterator<String> iterator = list.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             String next = iterator.next();
             System.out.println(next);
             iterator.remove();
@@ -40,7 +53,7 @@ public class ArrayListExample {
     }
 
 
-    public List<String>  getList(){
+    public List<String> getList() {
         ArrayList<String> strings = new ArrayList<>();
         strings.add("liu");
         strings.add("yi");
