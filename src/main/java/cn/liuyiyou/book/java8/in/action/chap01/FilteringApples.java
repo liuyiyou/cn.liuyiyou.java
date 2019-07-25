@@ -1,4 +1,4 @@
-package cn.liuyiyou.java8.action.chap01;
+package cn.liuyiyou.book.java8.in.action.chap01;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

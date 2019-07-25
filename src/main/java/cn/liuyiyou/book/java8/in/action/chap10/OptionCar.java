@@ -1,7 +1,9 @@
-package cn.liuyiyou.java8.action.chap10;
+package cn.liuyiyou.book.java8.in.action.chap10;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
+
+import java.util.Optional;
 
 /**
  * @author: liuyiyou.cn
@@ -10,6 +12,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
-public class Person {
-    private Car car;
+public class OptionCar {
+    private Optional<Insurance> insurance;
+
 }

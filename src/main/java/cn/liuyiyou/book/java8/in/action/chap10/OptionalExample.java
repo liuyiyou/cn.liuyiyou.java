@@ -1,9 +1,8 @@
-package cn.liuyiyou.java8.action.chap10;
+package cn.liuyiyou.book.java8.in.action.chap10;
 
 import org.junit.Test;
 
 import java.util.Optional;
-import java.util.jar.Attributes;
 
 /**
  * @author: liuyiyou.cn

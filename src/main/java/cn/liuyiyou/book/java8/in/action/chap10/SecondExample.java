@@ -1,4 +1,4 @@
-package cn.liuyiyou.java8.action.chap10;
+package cn.liuyiyou.book.java8.in.action.chap10;
 
 import java.util.Optional;
 
