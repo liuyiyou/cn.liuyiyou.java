@@ -29,6 +29,10 @@ public class ArrayListExample {
         System.out.println(list.size());
     }
 
+    /**
+     * 说明一下，报错为UnsupportedOperationException的原因是因为Arrays.asList方法返回的不是ArrayList，而是一个继承
+     * AbstractList的一个内部ArrayList，该ArrayList中没有实现remove方法，而在AbstractList中的remove方法为未实现
+     */
     @Test(expected = UnsupportedOperationException.class)
     public void testRemove() {
         List<String> list = Arrays.asList("a", "b", "c", "d");
