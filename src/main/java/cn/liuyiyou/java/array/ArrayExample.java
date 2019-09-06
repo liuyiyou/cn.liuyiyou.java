@@ -1,9 +1,43 @@
 package cn.liuyiyou.java.array;
 
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @link https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/java/nutsandbolts/examples/ArrayDemo.java
  */
-public class ArrayExample1 {
+public class ArrayExample {
+
+    /**
+     * 使用工具类 Arrays.asList()把数组转换成集合时，不能使用其修改集合相关的方 法， 它的 add/remove/clear 方法会抛出
+     * UnsupportedOperationException 异常。
+     * <p>
+     * <p>
+     * 返回的是Arrays中的一个内部类，该内部类并没有实现add方法，但是如果是ArrayList是可以的
+     */
+    @Test(expected = UnsupportedOperationException.class)
+    public void test1() {
+        String[] str = new String[]{"liu", "yi"};
+        List<String> list = Arrays.asList(str);
+        list.add("you");
+    }
+
+    @Test
+    public void copyTest() {
+        char[] copyFrom = {'d', 'e', 'c', 'a', 'f', 'f', 'e',
+                'i', 'n', 'a', 't', 'e', 'd'};
+        char[] copyTo = new char[7];
+
+        System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+        System.out.println(new String(copyTo));
+
+
+        char[] copyTo2 = java.util.Arrays.copyOfRange(copyFrom, 2, 9);
+
+        System.out.println(new String(copyTo2));
+    }
 
     public static void main(String[] args) {
         // declares an array of integers

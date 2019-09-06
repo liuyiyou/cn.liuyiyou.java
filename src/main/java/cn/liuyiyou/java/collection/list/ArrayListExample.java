@@ -44,6 +44,14 @@ public class ArrayListExample {
 
     }
 
+    @Test
+    public void remove2() {
+        List<String> list = getList();
+        for (int i = 0; i < list.size(); i++) {
+            list.remove(i);
+        }
+        System.out.println(list);
+    }
 
     @Test
     public void remove() {

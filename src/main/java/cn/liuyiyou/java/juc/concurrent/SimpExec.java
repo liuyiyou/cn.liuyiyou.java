@@ -1,12 +1,12 @@
 /** 
  * Project Name:cn.liuyiyou.java 
  * File Name:SimpExec.java 
- * Package Name:cn.liuyiyou.java.thread.concurrent 
+ * Package Name:cn.liuyiyou.java.juc.concurrent
  * Date:2017年7月25日下午2:30:43 
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved. 
  * 
  */
-package cn.liuyiyou.java.thread.concurrent;
+package cn.liuyiyou.java.juc.concurrent;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;

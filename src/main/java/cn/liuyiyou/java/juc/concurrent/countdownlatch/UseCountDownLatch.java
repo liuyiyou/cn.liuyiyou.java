@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.thread.concurrent.countdownlatch;
+package cn.liuyiyou.java.juc.concurrent.countdownlatch;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;

@@ -1,4 +1,4 @@
-package cn.liuyiyou.java.thread.concurrent;
+package cn.liuyiyou.java.juc.concurrent;
 
 import org.jetbrains.annotations.NotNull;
 

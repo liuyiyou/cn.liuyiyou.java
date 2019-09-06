@@ -1,19 +1,17 @@
 /**
  * 所属项目:cn.liuyiyou.java
- * 文件名称:cn.liuyiyou.java.thread.concurrent.MyCacu.java
+ * 文件名称:cn.liuyiyou.java.juc.concurrent.MyCacu.java
  * 日期: 2017年8月5日下午3:48:05
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  *
  */
-package cn.liuyiyou.java.thread.concurrent;
+package cn.liuyiyou.java.juc.concurrent;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-
-import org.apache.commons.collections.set.SynchronizedSet;
 
 /**
  * 一个文件中有10000个数，用Java实现一个多线程程序将这个10000个数输出到5个不用文件中（不要求输出到每个文件中的数量相同）。
