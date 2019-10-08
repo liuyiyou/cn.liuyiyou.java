@@ -7,10 +7,10 @@ import java.util.function.BooleanSupplier;
 import java.util.function.IntToDoubleFunction;
 
 /**
- * @author: liuyiyou@yanglaoban.com
+ * @author: liuyiyou@liuyiyou.cn
  * @date: 2018/9/21
  * @version: V1.0
- * @Copyright: 2018 yanglaoban.com Inc. All rights reserved.
+ * @Copyright: 2018 liuyiyou.cn Inc. All rights reserved.
  */
 public class LambdaExample {
 

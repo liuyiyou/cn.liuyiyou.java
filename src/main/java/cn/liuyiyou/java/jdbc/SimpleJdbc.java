@@ -17,7 +17,7 @@ import java.sql.SQLException;
 public class SimpleJdbc {
 
     private Connection connection;
-    private String url = "jdbc:mysql://localhost:3306/ibalife_user";
+    private String url = "jdbc:mysql://localhost:3306/liuyiyou.cn_user";
     private String username = "root";
     private String password = "123456";
 

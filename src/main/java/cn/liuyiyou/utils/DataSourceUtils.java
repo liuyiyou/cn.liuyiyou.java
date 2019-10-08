@@ -19,7 +19,7 @@ public abstract class DataSourceUtils {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/ibalife_busi");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/liuyiyou.cn_busi");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         try {
             return dataSource.getConnection();
