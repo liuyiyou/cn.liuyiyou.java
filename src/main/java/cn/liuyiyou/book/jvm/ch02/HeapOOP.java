@@ -5,7 +5,7 @@
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  *
  */
-package cn.liuyiyou.jvm;
+package cn.liuyiyou.book.jvm.ch02;
 
 import java.util.ArrayList;
 import java.util.List;
