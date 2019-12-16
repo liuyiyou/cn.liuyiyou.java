@@ -1,14 +1,9 @@
 package cn.liuyiyou.book.java8.in.action.chap01;
 
-import lombok.Data;
-import lombok.experimental.Accessors;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-
-import static java.util.Comparator.comparingInt;
+import java.util.function.Predicate;
 
 /**
  * @author: liuyiyou.cn
@@ -18,106 +13,102 @@ import static java.util.Comparator.comparingInt;
 public class FilteringApples {
 
 
-    public static void main(String[] args) {
-        List<Apple> inventory = Arrays.asList(
-                new Apple().setWeight(80).setColor("green"),
-                new Apple().setWeight(155).setColor("green"),
-                new Apple().setWeight(120).setColor("red"));
+    public static void main(String ... args){
 
+        List<Apple> inventory = Arrays.asList(new Apple(80,"green"),
+                new Apple(155, "green"),
+                new Apple(120, "red"));
 
-        //排序- 匿名类
-        inventory.sort(new Comparator<Apple>() {
-            @Override
-            public int compare(Apple o1, Apple o2) {
-                return o1.getWeight() - o2.getWeight();
-            }
-        });
-
-
-        //排序-lambda
-        inventory.sort((o1, o2) -> o1.getWeight() - o2.getWeight());
-
-        //排序-工具类
-        inventory.sort(Comparator.comparingInt(Apple::getWeight));
-
-
-        System.out.println(inventory);
-
-        inventory.sort(comparingInt(Apple::getWeight));
-        //
-        List<Apple> greenApples = filterApplesByColor(inventory, "green");
+        // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
+        List<Apple> greenApples = filterApples(inventory, FilteringApples::isGreenApple);
         System.out.println(greenApples);
 
-        List<Apple> redApples = filterApplesByColor(inventory, "red");
-        System.out.println(redApples);
+        // [Apple{color='green', weight=155}]
+        List<Apple> heavyApples = filterApples(inventory, FilteringApples::isHeavyApple);
+        System.out.println(heavyApples);
 
-
-        List<Apple> greenApples2 = filter(inventory, new AppleColorPredicate());
+        // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
+        List<Apple> greenApples2 = filterApples(inventory, (Apple a) -> "green".equals(a.getColor()));
         System.out.println(greenApples2);
 
-        List<Apple> heaveApples = filter(inventory, new AppleWeightPredicate());
-        System.out.println(heaveApples);
+        // [Apple{color='green', weight=155}]
+        List<Apple> heavyApples2 = filterApples(inventory, (Apple a) -> a.getWeight() > 150);
+        System.out.println(heavyApples2);
 
-
-        List<Apple> redAndHeavyApples = filter(inventory, new AppleRedAndHeavyPredicate());
-        System.out.println(redAndHeavyApples);
-
-        List<Apple> redApples2 = filter(inventory, apple -> apple.getColor().equals("red"));
-        System.out.println(redApples2);
-
+        // []
+        List<Apple> weirdApples = filterApples(inventory, (Apple a) -> a.getWeight() < 80 ||
+                "brown".equals(a.getColor()));
+        System.out.println(weirdApples);
     }
 
-    public static List<Apple> filterApplesByColor(List<Apple> inventory, String color) {
+    public static List<Apple> filterGreenApples(List<Apple> inventory){
         List<Apple> result = new ArrayList<>();
-        for (Apple apple : inventory) {
-            if (apple.getColor().equals(color)) {
+        for (Apple apple: inventory){
+            if ("green".equals(apple.getColor())) {
                 result.add(apple);
             }
         }
         return result;
     }
 
-
-    public static List<Apple> filter(List<Apple> inventory, ApplePredicate predicate) {
+    public static List<Apple> filterHeavyApples(List<Apple> inventory){
         List<Apple> result = new ArrayList<>();
-        for (Apple apple : inventory) {
-            if (predicate.test(apple)) {
+        for (Apple apple: inventory){
+            if (apple.getWeight() > 150) {
                 result.add(apple);
             }
         }
         return result;
     }
 
-    @Data
-    @Accessors(chain = true)
+    public static boolean isGreenApple(Apple apple) {
+        return "green".equals(apple.getColor());
+    }
+
+    public static boolean isHeavyApple(Apple apple) {
+        return apple.getWeight() > 150;
+    }
+
+    public static List<Apple> filterApples(List<Apple> inventory, Predicate<Apple> p){
+        List<Apple> result = new ArrayList<>();
+        for(Apple apple : inventory){
+            if(p.test(apple)){
+                result.add(apple);
+            }
+        }
+        return result;
+    }
+
     public static class Apple {
         private int weight = 0;
         private String color = "";
-    }
 
-
-    interface ApplePredicate<T> {
-        boolean test(Apple apple);
-    }
-
-    static class AppleWeightPredicate implements ApplePredicate {
-        @Override
-        public boolean test(Apple apple) {
-            return apple.getWeight() > 150;
+        public Apple(int weight, String color){
+            this.weight = weight;
+            this.color = color;
         }
-    }
 
-    static class AppleColorPredicate implements ApplePredicate {
-        @Override
-        public boolean test(Apple apple) {
-            return "green".equals(apple.getColor());
+        public Integer getWeight() {
+            return weight;
         }
-    }
 
-    static class AppleRedAndHeavyPredicate implements ApplePredicate {
-        @Override
-        public boolean test(Apple apple) {
-            return "red".equals(apple.getColor()) && apple.getWeight() > 150;
+        public void setWeight(Integer weight) {
+            this.weight = weight;
+        }
+
+        public String getColor() {
+            return color;
+        }
+
+        public void setColor(String color) {
+            this.color = color;
+        }
+
+        public String toString() {
+            return "Apple{" +
+                    "color='" + color + '\'' +
+                    ", weight=" + weight +
+                    '}';
         }
     }
 }
