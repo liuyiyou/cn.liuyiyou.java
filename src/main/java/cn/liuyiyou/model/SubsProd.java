@@ -11,4 +11,5 @@ public class SubsProd {
     private String prodName;
     private Float taxPrice;
     private Float taxRate;
+    private int prodNum;
 }

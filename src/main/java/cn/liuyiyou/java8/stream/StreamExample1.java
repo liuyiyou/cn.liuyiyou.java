@@ -106,16 +106,8 @@ public class StreamExample1 {
 
     }
 
-    /**
-     * 应用缩减操作来计算流中的单个值
-     */
-    @Test
-    public void reduce() {
-        Stream<Integer> numbersStream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5});
-        int sum = numbersStream.reduce(0, (n1, n2) -> n1 + n2);
-        int sum2 = numbersStream.reduce(0, Integer::sum);
-        System.out.println(sum == sum2);
-    }
+
+
 
     /**
      * 列表中所有奇数整数的平方和
