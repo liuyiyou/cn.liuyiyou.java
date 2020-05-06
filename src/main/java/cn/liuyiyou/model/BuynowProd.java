@@ -8,4 +8,6 @@ import lombok.experimental.Accessors;
 public class BuynowProd {
     private Long prodId;
     private Long skuId;
+    private Float price;
+    private Integer store;
 }

@@ -12,7 +12,7 @@ import static java.util.Optional.ofNullable;
  * @author: liuyiyou
  * @date: 2018/7/12
  */
-public class OfNullableTest {
+public class OfNullableExample {
 
 
     /**
@@ -21,12 +21,10 @@ public class OfNullableTest {
     @Test
     public void test() {
         List<User> users = getUsers();
-        ofNullable(users).ifPresent(notNullUsers -> {
-            notNullUsers.forEach(user -> ofNullable(user).ifPresent(notNullUser -> {
-                notNullUser.getUserName().length();
-                ofNullable(notNullUser.getAddress()).ifPresent(address -> System.out.println(address.getCity()));
-            }));
-        });
+        ofNullable(users).ifPresent(notNullUsers -> notNullUsers.forEach(user -> ofNullable(user).ifPresent(notNullUser -> {
+            notNullUser.getUserName().length();
+            ofNullable(notNullUser.getAddress()).ifPresent(address -> System.out.println(address.getCity()));
+        })));
     }
 
 

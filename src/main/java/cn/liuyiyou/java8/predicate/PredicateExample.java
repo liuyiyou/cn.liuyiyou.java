@@ -13,7 +13,7 @@ import java.util.function.Supplier;
  * @author: liuyiyou
  * @date: 2018/4/25
  */
-public class PredicateTest {
+public class PredicateExample {
 
 
     /**
@@ -41,6 +41,7 @@ public class PredicateTest {
     }
 
 
+    @Test
     public void supplier() {
         Supplier<User> userSupplier = User::new;
         System.out.println(userSupplier.get());

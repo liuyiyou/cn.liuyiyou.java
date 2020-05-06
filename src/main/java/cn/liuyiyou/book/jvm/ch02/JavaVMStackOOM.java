@@ -14,12 +14,7 @@ public class JavaVMStackOOM {
 
     public void stackLeakByThread(){
         while (true){
-            Thread thread = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    dontStop();
-                }
-            });
+            Thread thread = new Thread(this::dontStop);
             thread.start();
         }
     }

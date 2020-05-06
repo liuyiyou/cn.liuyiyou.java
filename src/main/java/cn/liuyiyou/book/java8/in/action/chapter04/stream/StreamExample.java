@@ -1,17 +1,20 @@
 package cn.liuyiyou.book.java8.in.action.chapter04.stream;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * @author: liuyiyou.cn
  * @date: 2019/7/25
  * @version: V1.0
  */
+@Slf4j
 public class StreamExample {
 
     @Test
@@ -39,7 +42,7 @@ public class StreamExample {
 
         //打印
         for (String name : lowCaloricDishNames) {
-            System.out.println(name);
+            log.info(name);
         }
     }
 
@@ -47,9 +50,9 @@ public class StreamExample {
     public void inJava8() {
         List<Dish> menus = Menu.getMenus();
         menus.stream()
-                .filter(d -> d.getCalories() < 400)//过滤
+                .filter(d -> d.getCalories() < 300)//过滤
                 .sorted(Comparator.comparing(Dish::getCalories))//排序
                 .map(Dish::getName)//得到名称
-                .forEach(System.out::println);//打印
+                .forEach(log::info);//打印
     }
 }

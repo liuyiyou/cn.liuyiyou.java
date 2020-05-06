@@ -1,6 +1,6 @@
 /**
  * 所属项目:cn.liuyiyou.java
- * 文件名称:cn.liuyiyou.java8.LambdaTest.java
+ * 文件名称:cn.liuyiyou.java8.LambdaExample.java
  * 日期: 2017年9月21日上午10:03:54
  * Copyright (c) 2017, liuyiyou.cn All Rights Reserved.
  *
@@ -23,15 +23,12 @@ import org.junit.Test;
  * @date 2017年9月21日 上午10:03:54
  * @version
  */
-public class LambdaTest {
+public class LambdaExample {
 
 	@Test
 	public void test1() {
-		Arrays.asList("a", "b", "c").forEach(e -> System.out.println(e));
-
-		Arrays.asList("a", "b", "c").forEach(e -> {
-			System.out.println(e);
-		});
+		Arrays.asList("a", "b", "c").forEach(System.out::println);
+		Arrays.asList("a", "b", "c").forEach(System.out::println);
 	}
 
 	@Test
@@ -49,11 +46,11 @@ public class LambdaTest {
 
 	public void test(){
 		List<BuynowProd> buynowProds = new ArrayList<>();
-		Map<Long, List<BuynowProd>> mapList = buynowProds.parallelStream().collect(Collectors.groupingBy(x->x.getProdId()));
+		Map<Long, List<BuynowProd>> mapList = buynowProds.parallelStream().collect(Collectors.groupingBy(BuynowProd::getProdId));
 		Map<Long, BuynowProd> buynowProdMap = buynowProds.parallelStream().collect(Collectors.toMap(BuynowProd::getSkuId, (p) -> p));
 		Integer cnt  = (null != mapList? mapList.size(): 0);
 		List<BuynowProd> prods = new ArrayList<>();
-		Map<Long,List<BuynowProd>> submitProds= prods.parallelStream().collect(Collectors.groupingBy(x->x.getProdId()));
+		Map<Long,List<BuynowProd>> submitProds= prods.parallelStream().collect(Collectors.groupingBy(BuynowProd::getProdId));
 		Iterator<Long> iterator = submitProds.keySet().iterator();
 	}
 }

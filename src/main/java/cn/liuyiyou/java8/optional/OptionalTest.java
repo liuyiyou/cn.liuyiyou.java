@@ -6,10 +6,6 @@
  */
 package cn.liuyiyou.java8.optional;
 
-import cn.liuyiyou.java8.optional.Inner;
-import cn.liuyiyou.java8.optional.Nested;
-import cn.liuyiyou.java8.optional.Outer;
-import cn.liuyiyou.java8.optional.Streams;
 import cn.liuyiyou.model.User;
 import com.google.common.collect.Lists;
 import org.junit.Test;

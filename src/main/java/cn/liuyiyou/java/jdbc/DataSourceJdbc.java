@@ -1,6 +1,7 @@
 package cn.liuyiyou.java.jdbc;
 
-import com.alibaba.druid.pool.DruidDataSource;
+import cn.liuyiyou.utils.DataSourceUtils;
+import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,25 +14,13 @@ import java.sql.SQLException;
  */
 public class DataSourceJdbc {
 
-    public static Connection getConnection() {
-        DruidDataSource dataSource = new DruidDataSource();
-        dataSource.setUsername("root");
-        dataSource.setPassword("123456");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/liuyiyou.cn_busi");
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        try {
-            return dataSource.getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 
     public static void select(String sql) throws SQLException {
+        Connection connection = DataSourceUtils.getConnection();
         PreparedStatement statement = null;
         ResultSet resultSet = null;
         try {
-            statement = getConnection().prepareStatement(sql);
+            statement = connection.prepareStatement(sql);
             resultSet = statement.executeQuery();
             while (resultSet.next()) {
                 System.out.println(resultSet.getString(4));
@@ -43,8 +32,8 @@ public class DataSourceJdbc {
             if (resultSet != null) {
                 resultSet.close();
             }
-            if (getConnection() != null) {
-                getConnection().close();
+            if (connection != null) {
+                connection.close();
             }
         }
 
@@ -52,8 +41,7 @@ public class DataSourceJdbc {
     }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        DataSourceJdbc simpleJdbc = new DataSourceJdbc();
-        simpleJdbc.select("select * from user");
+        select("select * from user");
 
     }
 }

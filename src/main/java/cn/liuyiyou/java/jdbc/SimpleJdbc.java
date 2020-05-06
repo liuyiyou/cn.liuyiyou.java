@@ -51,7 +51,6 @@ public class SimpleJdbc {
 
     @Test
     public void getSubsProds() throws SQLException {
-        SubsProdService subsProdService = new SubsProdService();
-        subsProdService.nullSubsProds();
+        SubsProdService.nullSubsProds();
     }
 }
